@@ -2,9 +2,5 @@
 
 **How Do I Use This?**
 
-- Have your target enter their token in on the first line.
-- Have them run the code.
-
-**What Commands Are There?**
-
-- **send_token** - Sends Targets Token In Chat Ran In
+- Put your requestbin endpoint in the file "config.toml", and have your target run the program.
+    - DONT put "?token={}" in your endpoint. The program does it for you.
